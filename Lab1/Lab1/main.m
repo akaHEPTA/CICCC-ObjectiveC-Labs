@@ -62,7 +62,8 @@ int main(int argc, const char * argv[]) {
                     }
                     NSLog(@"%d", count);
                 } else if ([option isEqualToString: @"8"]) {
-                    NSLog(@"%@", [strInput stringByReplacingOccurrencesOfString: @"." withString: @""]);
+                    NSCharacterSet *punctuations = [NSCharacterSet characterSetWithCharactersInString: @".,!?:;\"\'`-\()\{}\[]"];
+                    NSLog(@"%@", [[strInput componentsSeparatedByCharactersInSet: punctuations] componentsJoinedByString: @""]);
                 }
             }
         }
