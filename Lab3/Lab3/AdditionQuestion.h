@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AdditionQuestion : NSObject
 
+@property (nonatomic, copy) NSString* question;
+@property (nonatomic) NSInteger answer;
+           
 @end
 
 NS_ASSUME_NONNULL_END

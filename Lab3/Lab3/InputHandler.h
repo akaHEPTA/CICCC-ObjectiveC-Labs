@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InputManager : NSObject
+@interface InputHandler : NSObject
+
++ (NSString *)getUserInput:(int) maxLength;
++ (NSString *)getUserInput:(int) maxLength prompt:(NSString *) prompt;
 
 @end
 

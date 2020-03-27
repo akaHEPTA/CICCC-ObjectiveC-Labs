@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface ScoreKeeper : NSObject
 
-@end
+@property (nonatomic, assign) NSInteger correct;
+@property (nonatomic, assign) NSInteger wrong;
 
-NS_ASSUME_NONNULL_END
+- (NSString *)printScore;
+
+@end

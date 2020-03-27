@@ -10,4 +10,9 @@
 
 @implementation ScoreKeeper
 
+- (NSString *)printScore {
+    NSInteger ratio = (_correct * 100 / (_correct + _wrong));
+    return [NSString stringWithFormat:@"score: %ld right, %ld wrong ---- %ld", _correct, _wrong, ratio];
+}
+
 @end
